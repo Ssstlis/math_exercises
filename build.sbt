@@ -7,13 +7,8 @@ lazy val mathExercises = project
   .settings(
     scalaVersion := "2.12.10",
     scalacOptions := Seq(
-      "-language:implicitConversions",
-      "-language:higherKinds",
-      "-language:existentials",
       "-Ywarn-unused",
-      "-Ypartial-unification",
       "-Ywarn-dead-code",
-      "-Xlint:-adapted-args,_",
       "-deprecation",
       "-unchecked",
       "-feature",
@@ -28,7 +23,6 @@ lazy val mathExercises = project
     publishArtifact in(Compile, packageDoc) := false,
     libraryDependencies ++= Seq(
       "org.scala-lang"    %  "scala-library"       % "2.12.10" pomOnly(),
-      "org.typelevel"     %% "cats-core"           % "2.0.0",
       "org.scalatest"     %% "scalatest" % "3.0.8" % "test"
     )
   )

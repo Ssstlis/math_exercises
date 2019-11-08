@@ -1,7 +1,7 @@
 import org.scalatest.WordSpec
 
 class SecondSpec extends WordSpec {
-  "Second" should {
+  "Second#solution" should {
     "return valid result for value less than ten" in {
       assert(Second.solution(9) == Right(0))
       assert(Second.solution(1) == Right(0))
